@@ -1,0 +1,160 @@
+＜参考＞
+最近の行儀のよい JavaScript の書き方
+http://qiita.com/kaiinui/items/22a75d2adc56a40da7b7
+
+JavaScriptでクラスっぽい書き方
+http://qiita.com/fukumotoy/items/8308c0949aebb02df7bd
+
+最近良くやるJavaScriptでのクラスの書き方
+http://qiita.com/chick307/items/c75dcc72f980c323f6ac
+
+[JavaScript] クラス＆モジュールの安全な書き方
+http://qiita.com/yasumodev/items/7d34a05aaea7d2cad7e3
+
+【JavaScript】デザインパターンを知ってみる。モジュール・パターン編
+http://bashalog.c-brains.jp/14/03/24-171000.php
+
+“use strict”（厳格モード）を使うべきか？
+http://analogic.jp/use-strict/
+
+
+＜JS Classっぽい書き方＞
+--------------------------------------------------------------
+http://bashalog.c-brains.jp/14/03/24-171000.php
+--------------------------------------------------------------
+
+
+＜Class定義 その他の言語＞
+--------------------------------------------------------------
+▼coffeescript吐き出されたソース
+(function() {
+  var Person;
+
+  Person = (function() {
+    function Person(name) {
+      this.name = name;
+    }
+    Person.prototype.hello = function() {
+      return setTimeout((function(_this) {
+        return function() {
+          return "Hello. My name is " + _this.name + ".";
+        };
+      })(this), 1000);
+    };
+    return Person;
+  })();
+}).call(this);
+
+--------------------------------------------------------------
+▼TypeScript
+class Person {
+    name
+    static kind = "Homo sapiens";
+    constructor(name) {
+        this.name = name;
+    }
+    walk(distance) {
+        console.log(this.name + " walk " + distance + "meter.");
+    }
+    private think() {
+        console.log(this.name + " is thinking...");
+    }
+}
+
+
+▼TypeScriptからの吐き出されるJS
+var Person = (function () {
+    function Person(name) {
+        this.name = name;
+    }
+    Person.prototype.walk = function (distance) {
+        console.log(this.name + " walk " + distance + "meter.");
+    };
+    Person.prototype.think = function () {
+        console.log(this.name + " is thinking...");
+    };
+    Person.kind = "Homo sapiens";
+
+    return Person;
+})();
+--------------------------------------------------------------
+▼AS3.0
+package  {
+    import flash.display.Bitmap;
+    import flash.display.Sprite;
+    import flash.events.MouseEvent;
+
+    public class EmbedImage extends Sprite{
+
+        [Embed(source='img/met001_s.jpg', mimeType="image/jpeg")]
+        private static const TestImage01:Class;
+
+        [Embed(source='img/met002_s.jpg', mimeType="image/jpeg")]
+        private static const TestImage02:Class;
+
+        public function EmbedImage(){
+            var imgObj01:Bitmap = new TestImage01();
+            // 画像のサイズを設定
+            imgObj01.width = 100;
+            imgObj01.height = 100;
+            // 画像の位置を設定
+            imgObj01.x = 0;
+            imgObj01.y = 0;
+
+            addChild(imgObj01);
+
+            var imgObj02:Bitmap = new TestImage02();
+            // 画像のサイズを設定
+            imgObj02.width = 100;
+            imgObj02.height = 100;
+            // 画像の位置を設定
+            imgObj02.x = 100;
+            imgObj02.y = 100;
+
+            addChild(imgObj02);
+
+        }
+    }
+}
+--------------------------------------------------------------
+▼swift
+class User {
+  var name: String
+  let number: Int
+
+  // 初期化時に呼ばれる
+  init(name: String, number: Int) {
+    self.name = name // 引数の変数名とクラスのプロパティを区別するため、selfをつける
+    self.number = number // 定数もinitの中なら設定できる
+  }
+
+  func hello() -> String {
+    return "hello, \(name)"
+  }
+}
+
+var user: User = User(name: "taro", number: 100)
+user.hello()
+--------------------------------------------------------------
+▼Python
+# -*- coding: utf-8 -*-
+
+class test_class:
+
+    def T(self,code,name):
+        self.code    =    code
+        self.name    =    name
+
+if __name__ == "__main__":
+
+    classList    =    []
+    classList.append(test_class(1,"テスト１"))
+    classList.append(test_class(2,"テスト２"))
+
+    for value in classList:
+        print "===== class ====="
+        print "code --> " + str(value.code)
+        print "name --> " + value.name
+--------------------------------------------------------------
+
+
