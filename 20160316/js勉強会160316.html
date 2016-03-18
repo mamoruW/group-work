@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=800">
+<title>js勉強会160316</title>
+<script>
+if(typeof Utility === 'undefined') var Utility = {};
+(function (Utility) {
+  "use strict;"
+  /**
+   * @class Main
+   */
+  Utility.Main = (function(){
+    var _test = 'A';
+    /**
+     * @constructor
+     */
+    function construct() {
+      // newつけないとエラー
+      if(!(this instanceof construct)) throw new TypeError('Constructor cannot be called as a function.');
+      var _this = this;
+
+      // console.log(this_);
+
+      this.size = 5;
+      this.lifeValue = 70;
+      this.handleResize();
+
+      // リサイズイベント
+      window.addEventListener("resize", function () {
+        // console.log('this', this); //window
+        // console.log('_this', _this); // construct
+        _this.handleResize();
+      });
+    };
+
+    /**
+     * @Method_A
+     */
+    construct.prototype.Method_A = function () {
+      return this.size;
+    };
+
+    /**
+     * @enterframe
+     */
+    construct.prototype.handleTick = function () {
+      this.particles();
+    };
+
+    /**
+     * @particles
+     */
+    construct.prototype.particles = function () {
+      console.log('fnc particles');
+    };
+
+    /**
+     * @resize
+     */
+    construct.prototype.handleResize = function () {
+      console.log('fnc handle');
+      this.width  = window.innerWidth;
+      this.height = window.innerHeight;
+    };
+
+    return construct;
+  })();
+})(Utility);
+
+// newしないとthisのスコープがおかしくなる
+var hoge = new Utility.Main();
+
+// 代入できる
+// hoge.size = 10;
+
+console.log(hoge.size_b);
+console.log(hoge.Method_A());
+
+</script>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+</body>
+</html>
