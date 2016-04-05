@@ -45,6 +45,8 @@ http://bashalog.c-brains.jp/14/03/24-171000.php
   })();
 }).call(this);
 
+↑coffeescriptは自動的にreturnする私用となってるみたいです。
+
 --------------------------------------------------------------
 ▼TypeScript
 class Person {
