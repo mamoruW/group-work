@@ -24,6 +24,7 @@ prototypeと__proto__のつながり
 (1)案件で使ってみた
 ・jsonファイルでスライドショーデータの管理
 ・モーダルウインドウ
+
 (2)他に使いどころあるかな
 http://jp.vuejs.org/examples/
 
