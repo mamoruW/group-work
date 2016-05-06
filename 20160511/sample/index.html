@@ -15,7 +15,7 @@
 <input type="text" v-model="search_txt"></input>
 <button type="submit" @click="callAjax(search_txt)">検索</button>
 <ul>
-	<li v-for="info in result" v-cloak>{{info.Item.itemName}}</li>
+	<li v-for="info in result" v-cloak><a href="{{info.Item.itemUrl}}" target="_blank">{{info.Item.itemName}}</a></li>
 </ul>
 </div>
 	<script src="js/jquery-2.2.2.min.js"></script>
