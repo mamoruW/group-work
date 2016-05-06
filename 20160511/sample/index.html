@@ -14,7 +14,6 @@
 <div id="app">
 <input type="text" v-model="search_txt"></input>
 <button type="submit" @click="callAjax(search_txt)">検索</button>
-<!-- <p v-text="search_txt"></p> -->
 <ul>
 	<li v-for="info in result" v-cloak>{{info.Item.itemName}}</li>
 </ul>
