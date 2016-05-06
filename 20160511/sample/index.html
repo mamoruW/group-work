@@ -4,14 +4,19 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<style type="text/css">
+		[v-cloak] {
+			display: none;
+		}
+	</style>
 </head>
 <body>
 <div id="app">
 <input type="text" v-model="search_txt"></input>
+<button type="submit" @click="callAjax(search_txt)">検索</button>
 <!-- <p v-text="search_txt"></p> -->
 <ul>
-	<li v-for="info in result">{{info.Item.itemName}}</li>
+	<li v-for="info in result" v-cloak>{{info.Item.itemName}}</li>
 </ul>
 </div>
 	<script src="js/jquery-2.2.2.min.js"></script>

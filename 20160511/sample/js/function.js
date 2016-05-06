@@ -29,9 +29,40 @@
 						data: {
 							that.result = data.Items;
 						}
-					console.log(JSON.stringify(that.result));
 				});
+			},
+			methods: {
+				enter: function(){
+					console.log('hi');
+				},
+				callAjax: function(keyword){
+					var keyword = encodeURIComponent(keyword);
+					var that = this;
+					$.ajax({
+						type : "GET",
+						url : "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?format=json&keyword="+ keyword + "&applicationId=1017613136716791304"
+					}).then(function(data){
+							data: {
+								that.result = data.Items;
+							}
+					});
+				}
 			}
 		});
+
+
+		// function callAjax(keyword){
+		// 	var keyword = encodeURIComponent(keyword);
+		// 	var that = this;
+		// 	console.log(this);
+		// 	$.ajax({
+		// 		type : "GET",
+		// 		url : "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?format=json&keyword="+ keyword + "&applicationId=1017613136716791304"
+		// 	}).then(function(data){
+		// 			data: {
+		// 				that.result = data.Items;
+		// 			}
+		// 	});
+		// }
 	});
 })(this);
