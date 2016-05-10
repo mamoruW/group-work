@@ -13,7 +13,7 @@
 
 		//▼extendでコンストラクタ作らずに直接定義するパターン
 		Vue.component('polygraph', {//親コンポーネント
-			props:['stats'],//親から子へデータを渡す場合はpropsを使用
+			props:['stats'],//親から子へデータを渡す場合はpropsを使用。データは親→子への一方通行。子のデータ変更を親に伝達もできるがするべきではない。
 			template: '#polygraph-template',
 			replace: true,
 			computed: {//基本ゲッターで使用
@@ -49,7 +49,7 @@
 			}
 		});
 	
-
+	//▼各支点の取得
 	function valueToPoint(value, index, total){
 		var x = 0;
 		var y = -value * 0.8;
@@ -64,6 +64,7 @@
 		}
 	}
 
+	//インスタンスの作成
 	new Vue({
 		el : "#demo",
 		data: {
