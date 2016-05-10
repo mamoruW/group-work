@@ -36,5 +36,8 @@ http://jp.vuejs.org/examples/
 
 
 ## 第五回（藍葉）
+①サンプル作ってみました。
+楽天：[http://plumping.heteml.jp/js-a/sample/](http://plumping.heteml.jp/js-a/sample/)
+SVGグラフ：[http://plumping.heteml.jp/js-a/sample/](http://plumping.heteml.jp/js-a/svggraph/)
 
 
