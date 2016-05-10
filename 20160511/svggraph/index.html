@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style type="text/css">
+		[v-cloak] {
+			display: none;
+		}
+		body {
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+polygon {
+    fill: #42b983;
+    opacity: .75;
+}
+
+circle {
+    fill: transparent;
+    stroke: #999;
+}
+
+text {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-size: 10px;
+    fill: #666;
+}
+
+label {
+    display: inline-block;
+    margin-left: 10px;
+    width: 20px;
+}
+
+#raw {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+	</style>
+</head>
+<body>
+
+<!-- ▼<polygraph></polygraph>で出力されるテンプレ -->
+<script type="text/x-template" id="polygraph-template">
+	<g>
+		<polygon :points="points"></polygon>
+		<circle cx="100" cy="100" r="80"></circle>
+		<!-- ▼コンポーネント（ローカル） -->
+		<axis-label
+			v-for="stat in stats"
+			:stat="stat"
+			:index="$index"
+			:total="stats.length">
+		</axis-label>
+	</g>
+</script>
+<!-- / END -->
+
+
+<!-- ▼<axis-label></axis-label>で出力されるテンプレ -->
+<script type="text/x-template" id="axis-label-template">
+<text :x="point.x" :y="point.y">{{stat.label}}</text>
+</script>
+
+
+<div id="demo">
+	<svg width="200" height="200">
+	<!-- ▼コンポーネント（グローバル） -->
+		<polygraph :stats="stats"></polygraph>
+	</svg>
+
+	<div v-for="stat in stats">
+		<label>{{stat.label}}</label>
+		<input type="range" min="0" max="100" v-model="stat.value"></input>
+		<span>{{stat.value}}</span>
+		<button @click="remove(stat)">X</button>
+	</div>
+
+	<form id="app">
+	<input name="newlabel" v-model="newlabel"></input>
+	<button @click="add">点を追加</button>
+	<pre id="raw">{{stats | json}}</pre>
+	</form>
+</div>
+
+
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/function.js"></script>
+</body>
+</html>
