@@ -29,7 +29,7 @@
 			components: {//←componentsで登録するとローカルスコープになる。polygraphの子コンポーネント
 
 				'axis-label': {
-					props: {//渡すデータの型を決めてられる
+					props: {//親から受け取るデータの型を決められる。子側でも親データを受け取るという宣言のためにpropsの設定は必要
 						stat: Object,
 						index: Number,
 						total: Number
@@ -84,7 +84,7 @@
 				if(this.stats.length > 3) {
 					this.stats.$remove(stat)
 				}else {
-					alert('これ以上削除できん！');
+					alert('これ以上削除できますん！');
 				}
 			}
 		}
