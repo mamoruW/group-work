@@ -21,13 +21,8 @@ prototypeと__proto__のつながり
 ③jsのフレームワークについて考える（藍葉）
 
 ## 第三回　（並木）
-・前回のjsで継承を考える
-→自分はJSの継承とか知識足りてないので、みなさんもたくさんの知識を持ってきて下さい
-
-【事前に調べておいてねキーワード】
-・extends
-・jsマージ
-・前回の復習（https://github.com/EbiuFe/group-work/blob/master/20160316/js%E5%8B%89%E5%BC%B7%E4%BC%9A160316.html）
+・前回のjsで継承を考える  
+→自分はJSの継承とか知識足りてないので、みなさんもたくさんの知識を持ってきて下さい  
 
 ## 第四回　・vue.js の使いどころを考える（笈川）
 (1)案件で使ってみた
@@ -47,6 +42,6 @@ http://jp.vuejs.org/examples/
 SVGグラフ：[http://plumping.heteml.jp/js-a/sample/](http://plumping.heteml.jp/js-a/svggraph/)
 
 ## 第六回（並木）
-・Vagrant基本的な使い方
-・Vagrantのメリット・デメリット
-・Vagrant使うと作業環境どう変わる
+・Vagrant基本的な使い方  
+・Vagrantのメリット・デメリット  
+・Vagrant使うと作業環境どう変わる  
