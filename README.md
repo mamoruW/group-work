@@ -45,3 +45,5 @@ SVGグラフ：[http://plumping.heteml.jp/js-a/sample/](http://plumping.heteml.j
 ・Vagrant基本的な使い方  
 ・Vagrantのメリット・デメリット  
 ・Vagrant使うと作業環境どう変わる  
+
+## 第七回　Pixi.jsを使って簡単なアニメーションを実装する（村上）
