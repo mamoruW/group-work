@@ -1,6 +1,8 @@
 # 2016/05/25 第6回JS勉強会
 
-## Boxを取得
+## Vagrant基本的な使い方
+
+### Boxを取得
 公式
 http://www.vagrantbox.es/  
 https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box  
@@ -25,14 +27,14 @@ Boxの場所
 $ cd ./.vagrant.d/boxes  
 ~~~
 
-## 仮想マシンを初期化
+### 仮想マシンを初期化
 ~~~
 $ mkdir test/
 $ cd test
 $ vagrant init centos
 ~~~
 
-## 仮想マシンを操作
+### 仮想マシンを操作
 ~~~
 起動／$ vagrant up
 停止／$ vagrant halt
@@ -43,7 +45,7 @@ $ vagrant init centos
 削除／$ vagrant destroy
 ~~~
 
-## 接続する
+### 接続する
 ~~~
 $ vagrant ssh
 $ sudo yum -y install httpd
@@ -64,7 +66,7 @@ $ sudo chkconfig httpd on
 $ sudo systemctl stop firewalld
 ~~~
 
-## ブラウザで確認
+### ブラウザで確認
 ~~~
 $ cd /var/www/html
 $ sudo vi index.html
@@ -87,8 +89,12 @@ $ vagrant ssh
 $ sudo systemctl stop firewalld
 ~~~
 
-## Macでファイルをいじる
-~~~
-$ pwd
-~~~
-/Users/Yamato/.vagrant.d/boxes/test2
+## Vagrantのメリット・デメリット
+・複数人で全く同じ環境を構築できる
+・環境を簡単に破棄できる（Boxは壊れない）
+・環境構築はMAMP,ZAMPとくらべて環境構築が複雑
+
+## Vagrant使うと作業環境どう変わる
+・HTMLとJSしか使わない製作者には恩恵がすくない
+・たとえば本番環境しかない案件だったら、その案件用のBOXを作っておいて簡単に構築できるようにしておくと便利？
+
