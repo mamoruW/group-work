@@ -50,6 +50,6 @@ SVGグラフ：[http://plumping.heteml.jp/js-a/sample/](http://plumping.heteml.j
 ・Pixi.jsを使った2Dアニメーションの動かし方
 
 【参考URL】
-- 簡単アニメーション！Pixi.jsを触ってみる！（1）テキストを動かしてみる　http://qiita.com/tadfmac/items/3684489e133320cd9d75
-- (インタラクティブ・プログラミング勉強会 第1回 乱数　http://fladdict.net/blog/2014/10/visual-coding-1.html )←余裕あれば
+・簡単アニメーション！Pixi.jsを触ってみる！（1）テキストを動かしてみる　http://qiita.com/tadfmac/items/3684489e133320cd9d75
+・(インタラクティブ・プログラミング勉強会 第1回 乱数　http://fladdict.net/blog/2014/10/visual-coding-1.html )←余裕あれば
 
