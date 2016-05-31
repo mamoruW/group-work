@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*==============================
+	layout
+==============================*/
+/*==============================
+	color
+==============================*/
+/*==============================
+	mixin
+==============================*/
+/*==============================
+	共通
+==============================*/
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mod-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*==============================
+	ヘッダー
+==============================*/
+/*==============================
+	コンテンツ
+==============================*/
+.wrp-contents {
+  position: relative;
+}
+
+/* メイン */
+.wrp-main {
+  margin-left: 140px;
+}
+
+/* サイド */
+.wrp-side {
+  width: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*==============================
+	グロナビ
+==============================*/
+.wrp-gnav--side .mod-list li:not(:first-child) {
+  margin-top: 1px;
+}
+.wrp-gnav--side .mod-list li.act .link-inner {
+  background: #33bfdb;
+  color: #fff;
+}
+.wrp-gnav--side .mod-list li .link-inner {
+  display: block;
+  padding: 10px;
+  background: #ccc;
+  color: #000;
+}
+
+/*==============================
+	フッター
+==============================*/
