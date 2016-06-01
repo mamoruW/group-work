@@ -51,7 +51,7 @@ We also try very hard to include support for:(サポート激ムズとのこと)
 ・Ejecta,  
 ・CocoonJS  
 
-▼作ってみた
+▼作ってみた  
 http://plumping.heteml.jp/html/pixi/htdocs/index.html
 
 ### 結論  
