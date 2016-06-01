@@ -51,7 +51,8 @@ We also try very hard to include support for:(サポート激ムズとのこと)
 ・Ejecta,  
 ・CocoonJS  
 
-
+▼作ってみた
+http://plumping.heteml.jp/html/pixi/htdocs/index.html
 
 ### 結論  
 ・現状2D描画系で最速っぽいので2Dアニメーションを実装するにはいいかも  
