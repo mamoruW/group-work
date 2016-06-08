@@ -45,10 +45,10 @@ VS系列は基本windowsで使用する用。macでも使えるのはVSCodeの�
 terminalのようにコマンド入力でいろいろできて慣れると便利そう。  
 
 
-
 # 参考になるURL
 [公式拡張機能ストア](https://marketplace.visualstudio.com/vscode)  
 [便利なショートカットfor mac](http://qiita.com/TakahiRoyte/items/cdab6fca64da386a690b)
+[vscodeの基本](http://www.atmarkit.co.jp/ait/articles/1507/10/news028.html)
 
 
 # 他のエディタるツールとの比較（思いっきり主観）  
