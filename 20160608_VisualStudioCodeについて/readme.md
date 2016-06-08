@@ -1,4 +1,8 @@
 # IDEっぽいエディタVisualStudioCode
+## 必要な物
+- node.js
+
+
 ## VisualStudioとは？
 VisualStudio・・・統合開発環境。  
 【VSのエディション一覧】

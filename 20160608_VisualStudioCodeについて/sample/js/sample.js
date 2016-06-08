@@ -1,6 +1,6 @@
-var SampledayoAAA = (function () {
-    function SampledayoAAA() {
+var SampledayoB = (function () {
+    function SampledayoB() {
     }
-    return SampledayoAAA;
+    return SampledayoB;
 }());
 //# sourceMappingURL=sample.js.map
