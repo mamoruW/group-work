@@ -56,3 +56,9 @@ http://plumping.heteml.jp/html/pixi/htdocs/index.html
 ・簡単アニメーション！Pixi.jsを触ってみる！（1）テキストを動かしてみる　http://qiita.com/tadfmac/items/3684489e133320cd9d75  
 ・(インタラクティブ・プログラミング勉強会 第1回 乱数　http://fladdict.net/blog/2014/10/visual-coding-1.html )←余裕あれば  
 
+## 第十回（村上）
+・CreateJSを使ったスプライトアニメーション実装
+
+【参考URL】
+・CreateJS入門サイト / ICS MEDIA　https://ics.media/tutorial-createjs/index.html
+・CreateJSとは / CodeGrid　https://app.codegrid.net/entry/createjs-introduction
