@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/*==============================
+	layout
+==============================*/
+/*==============================
+	color
+==============================*/
+/*==============================
+	mixin
+==============================*/
+/*==============================
+	共通
+==============================*/
+body {
+  background: #000;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mod-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*==============================
+	ヘッダー
+==============================*/
+.wrp-header {
+  padding: 20px 10px;
+}
+.wrp-header .mod-ttl-header {
+  color: #333;
+}
+
+/*==============================
+	コンテンツ
+==============================*/
+.wrp-contents {
+  display: table;
+  width: 100%;
+  direction: rtl;
+}
+
+/* メイン */
+.wrp-main {
+  display: table-cell;
+  vertical-align: top;
+  direction: ltr;
+}
+
+canvas {
+  border: 1px solid #fff;
+}
+
+/* サイド */
+.wrp-side {
+  display: table-cell;
+  width: 160px;
+  vertical-align: top;
+  direction: ltr;
+}
+
+/*==============================
+	グロナビ
+==============================*/
+.wrp-gnav--side .mod-list li:not(:first-child) {
+  margin-top: 1px;
+}
+.wrp-gnav--side .mod-list li.act .link-inner {
+  border: 2px solid #3a58ad;
+  background: #000;
+  color: #fff;
+}
+.wrp-gnav--side .mod-list li .link-inner {
+  display: block;
+  padding: 10px;
+  border: 2px solid #fff;
+  background: #000;
+  color: #fff;
+}
+
+/*==============================
+	フッター
+==============================*/
