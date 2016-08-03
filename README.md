@@ -66,3 +66,14 @@ http://plumping.heteml.jp/html/create/htdocs/
 ・CreateJS入門サイト / ICS MEDIA　https://ics.media/tutorial-createjs/index.html  
 ・CreateJSとは / CodeGrid　https://app.codegrid.net/entry/createjs-introduction  
 ・WebGLも怖くない！canvasライブラリを効率良く学ぶオススメの順番　http://tech.kayac.com/archive/_article20151204_canvas_library.html
+
+## 第十三回（村上）  
+・とあるコンペで書いたJSソースのレビュー  
+
+【対象ページ】  
+http://ex2.rainbow.co.jp/markup_engineer/murakami/project/_compe_smz/demo/htdocs/pattern_A/
+http://ex2.rainbow.co.jp/markup_engineer/murakami/project/_compe_smz/demo/htdocs/pattern_B/
+
+【参考URL】  
+・jQueryで画像などコンテンツ要素を順番にフェードインさせる方法 http://black-flag.net/jquery/20120725-4001.html  
+・JavaScript で配列から重複なくランダムに複数の要素を取り出す方法 https://h2ham.net/javascript-random-array  
